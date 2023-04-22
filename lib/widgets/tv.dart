@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/utils/text.dart';
 
-class TrendingMovies extends StatelessWidget {
-  final List trending;
+class TV extends StatelessWidget {
+  final List tv;
 
-  const TrendingMovies({super.key, required this.trending});
+  const TV({super.key, required this.tv});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class TrendingMovies extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start, 
         children: [
         ModifiedText(
-          text: "Trending Movies", 
+          text: "TV Movies", 
           size: 26,
            color: Colors.white,
            ),
@@ -25,7 +25,7 @@ class TrendingMovies extends StatelessWidget {
           height: 270.0,
           child: ListView.builder(
               scrollDirection: Axis.horizontal,
-              itemCount: trending.length,
+              itemCount: tv.length,
               itemBuilder: (context, index) {
                 return InkWell(
                   onTap: () {},
@@ -39,15 +39,15 @@ class TrendingMovies extends StatelessWidget {
                               image: DecorationImage(
                                   image: NetworkImage(
                             "https://image.tmdb.org/t/p/w500" +
-                                trending[index]["poster_path"],
+                                tv[index]["poster_path"],
                           )
                           )
                           ),
                         ),
                         Container(
                           child: ModifiedText(
-                            text: trending[index]['title']!=null?
-                            trending[index]['title']:'loading'
+                            text: tv[index]['title']!=null?
+                            tv[index]['title']:'loading'
                            , color: Colors.white,
                             size: 16,
                           ),

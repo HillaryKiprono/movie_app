@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/widgets/toprated.dart';
 import 'package:movie_app/widgets/trending.dart';
 import 'package:tmdb_api/tmdb_api.dart';
 
@@ -40,7 +41,7 @@ class _HomeState extends State<Home> {
     super.initState();
   }
 
-  loadmovies() async {
+  Future loadmovies() async {
     TMDB tmdbwithCustomLogs = TMDB(ApiKeys(apiKey, readAccessToken),
         logConfig: ConfigLogger(showErrorLogs: true, showLogs: true));
 
@@ -73,6 +74,7 @@ class _HomeState extends State<Home> {
       ),
       body: ListView(
         children: [
+          TopRated(toprated: topratedMovies),
           TrendingMovies(trending: trendingMovies),
         ],
       ),
