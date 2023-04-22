@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/widgets/toprated.dart';
 import 'package:movie_app/widgets/trending.dart';
+import 'package:movie_app/widgets/tv.dart';
 import 'package:tmdb_api/tmdb_api.dart';
 
 import 'utils/text.dart';
@@ -56,7 +57,7 @@ class _HomeState extends State<Home> {
       topratedMovies = topratedresults['results'];
       tv = tvresults['results'];
     });
-    print(trendingMovies);
+    print(tv);
   }
 
   @override
@@ -74,6 +75,9 @@ class _HomeState extends State<Home> {
       ),
       body: ListView(
         children: [
+          TV(
+            tv: tv,
+          ),
           TopRated(toprated: topratedMovies),
           TrendingMovies(trending: trendingMovies),
         ],
