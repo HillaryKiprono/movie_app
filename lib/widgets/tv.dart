@@ -34,7 +34,7 @@ class TV extends StatelessWidget {
                       children: [
                         Container(
                           width: 250,
-                          height: 140,
+                          height: 120,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               image: DecorationImage(
