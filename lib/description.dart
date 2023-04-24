@@ -31,6 +31,7 @@ class Description extends StatelessWidget {
                           bannerurl,
                           fit: BoxFit.cover,
                         ))),
+                        
                 Positioned(
                     bottom: 10.0,
                     child: ModifiedText(
