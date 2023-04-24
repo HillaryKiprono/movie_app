@@ -31,7 +31,7 @@ class _HomeState extends State<Home> {
   List topratedMovies = [];
   List tv = [];
 
-  final String apiKey = '76072432101bd23b93e66e46f9364a64';
+  final String apiKey = ' insert your own  API key';
 
   final readAccessToken =
       "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NjA3MjQzMjEwMWJkMjNiOTNlNjZlNDZmOTM2NGE2NCIsInN1YiI6IjYzNzg4ZmM3MTU2Y2M3MDA4MjE4MmY0NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9LyOBqxYnZhzNwIrcbqNRENjDZgvBUtYeUWg7Wlhkxs";
