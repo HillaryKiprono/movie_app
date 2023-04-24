@@ -1,16 +1,13 @@
 # movie_app
 
-A new Flutter project.
+Flutter Movie app UI .
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+I developed this project  purposely for learning  how to  consume rest API in flutter
 
-A few resources to get you started if this is your first Flutter project:
+- [Create your account in The API to get API Key by clicking this link ](https://developers.themoviedb.org/3/getting-started/introduction)
+# ScreenShots of the App After running
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_20230424-033223](https://user-images.githubusercontent.com/61239366/233876015-41bb708b-afca-4480-99c0-f5f33e4155bf.jpg)
+![Screenshot_20230424-033229](https://user-images.githubusercontent.com/61239366/233876024-ee5eb3e1-00b3-40af-ab0c-765be99f1bd1.jpg)
